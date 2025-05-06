@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<!-- Ye line browser ko batati hai ke yeh ek HTML5 document hai -->
+
+<html lang="en"> 
+<!-- <html> tag har HTML page ka root hota hai -->
+<!-- lang="en" ka matlab hai ke is page ki language English hai -->
+
+<head>
+    <meta charset="UTF-8"> 
+    <!-- Ye line ensure karti hai ke special characters (jaise Urdu ya emoji) sahi dikhain -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Isse website mobile devices par properly responsive dikhegi -->
+
+    <title>ID and Classes in HTML</title> 
+    <!-- Title tag browser tab me nazar aata hai -->
+
+    <link rel="stylesheet" href="style.css"> 
+    <!-- Ye line external CSS file ko is HTML page se connect karti hai -->
+</head>
+
+<body>
+    <!-- Body tag ke andar hamara visible content hota hai -->
+
+    <!-- Yeh pehla div hai jiska id="firstdiv" diya gaya hai -->
+    <!-- ID ek unique pehchan hoti hai kisi bhi element ki. Isse CSS ya JavaScript me access kiya ja sakta hai -->
+    <!-- Saath hi is div me 3 classes bhi lagi hui hain: red, bg, yellow -->
+    <!-- Multiple classes ka matlab hai ke is element par kai CSS styles apply ho sakte hain -->
+    <div id="firstdiv" class="red bg yellow">First</div>
+
+    <!-- Dusra div hai jisko ek ID di gayi hai "seconddiv" -->
+    <!-- Isme koi class nahi lagi, sirf ID use hui hai -->
+    <div id="seconddiv">Second</div>
+
+    <!-- Span ek inline element hota hai -->
+    <!-- Is span me class="red" lagayi gayi hai, jisse style.css file me defined "red" class ki styling apply hogi -->
+    <!-- Ye empty span hai lekin CSS ya JavaScript ke liye useful ho sakta hai -->
+    <span class="red"></span>
+
+</body>
+</html>
