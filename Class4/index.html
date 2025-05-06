@@ -1,60 +1,59 @@
-<!DOCTYPE html>
-<!-- Ye batata hai ke ye HTML5 document hai -->
-
-<html lang="en">
-<!-- HTML document ki shuruat, aur language English hai -->
-
+<!DOCTYPE html> <!-- Yeh batata hai ke yeh HTML5 document hai -->
+<html lang="en"> <!-- Page ki language English hai -->
 <head>
-    <!-- Head section: yahaan page ki info hoti hai jo browser ko chahiye hoti hai -->
-
-    <meta charset="UTF-8">
-    <!-- Page ka character encoding (UTF-8) set karta hai -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Responsive design ke liye: mobile screen ke hisaab se adjust hota hai -->
-
-    <title>Document</title>
-    <!-- Tab title ya browser window mein dikhne wala title -->
+    <meta charset="UTF-8"> <!-- Characters ko sahi dikhane ke liye encoding UTF-8 hai -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Page ko mobile-friendly banata hai -->
+    <title>iamges</title> <!-- Browser tab mein page ka title -->
 </head>
-
 <body>
-    <!-- Body: yahan actual page ka content likha jata hai -->
 
-    <!-- Headings h1 se h6 tak: h1 sabse badi aur h6 sabse chhoti hoti hai -->
-    <h1>sigma habib ka course acha habib</h1> 
-    <h2>sigma habib ka course acha habib</h2> 
-    <h3>sigma habib ka course acha habib</h3> 
-    <h4>sigma habib ka course acha habib</h4> 
-    <h5>sigma habib ka course acha habib</h5>
-    <h6>sigma habib ka course acha habib</h6>
+    <!-- Yeh image dikhata hai, image "assets" folder mein hai -->
+    <img width="230" height="170" src="assets/image.png" alt="laptop image">
 
-    <!-- Paragraph tag with inline CSS to set background color -->
-    <p style="background-color: yellow;">
-        <!-- Pehla paragraph jiska background yellow hai -->
-        Lorem ipsum dolor sit amet consectetur adipisicing elit...
-    </p>
+    <!-- Yeh table hai jo students ki details dikhata hai -->
+    <table border="1"> <!-- Border laga diya taake table clearly nazar aaye -->
+        <caption>Student details</caption> <!-- Table ka title -->
 
-    <p style="background-color: red;">
-        <!-- Dusra paragraph jiska background red hai -->
-        Lorem ipsum dolor sit amet consectetur adipisicing elit...
-    </p>
+        <thead> <!-- Table ka header section -->
+            <tr>
+                <th>Names</th> <!-- Column ka naam: Names -->
+                <th>Age</th>   <!-- Column ka naam: Age -->
+            </tr>
+        </thead>
 
-    <!-- Headings for bookmarks section -->
-    <h1>My bookmarks</h1>
-    <h2>Primary bookmarks</h2>
+        <tbody> <!-- Table ka main data yahan hota hai -->
+            <tr>
+                <td colspan="2">Habib</td> <!-- Yeh "Habib" dono columns mein faila hua hai -->
+            </tr>
+            <tr>
+                <td>Umer</td> <!-- Naam: Umer -->
+                <td rowspan="2">Eleven</td> <!-- "Eleven" do rows mein same rahega -->
+            </tr>
+            <tr>
+                <td>Haseeb</td> <!-- Naam: Haseeb -->
+            </tr>
+        </tbody>
 
-    <!-- Anchor (<a>) tag: hyperlink create karta hai -->
-    <!-- target="_blank" se link nayi tab mein khulta hai -->
-    <a target="_blank" href="https://www.google.com">Open Google</a><br>
-    <a target="_blank" href="https://www.facebook.com">Open Facebook</a><br>
-    <a target="_blank" href="https://www.quora.com">Open Quora</a><br>
-    <a target="_blank" href="https://www.codewithharry.com">Open CodeWithHarry</a><br>
-    <a target="_blank" href="https://www.youtube.com">Open YouTube</a><br>
+        <tfoot> <!-- Table ka footer section -->
+            <tr>
+                <td colspan="2">3 Students</td> <!-- Yeh batata hai ke total 3 students hain -->
+            </tr>
+        </tfoot>
+    </table>
 
-    <h2>Secondary bookmarks</h2>
-    <a target="_blank" href="https://www.wikipedia.com">Open Wikipedia</a><br>
-    <a target="_blank" href="https://www.stackoverflow.com">Open StackOverflow</a><br>
+    <!-- Unordered list (gol bullets ya square) -->
+    <ul type="square">
+        <li>habib</li>
+        <li>umer</li>
+        <li>haseeb</li>
+    </ul>
+
+    <!-- Ordered list (numbering ya letters ke sath) -->
+    <ol type="A">
+        <li>habib</li>
+        <li>umer</li>
+        <li>haseeb</li>
+    </ol>
 
 </body>
-
 </html>

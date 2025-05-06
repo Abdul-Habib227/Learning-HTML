@@ -1,41 +1,42 @@
-<!DOCTYPE html> 
-<!-- Ye line browser ko batati hai ke yeh ek HTML5 document hai -->
-
-<html lang="en"> 
-<!-- <html> tag har HTML page ka root hota hai -->
-<!-- lang="en" ka matlab hai ke is page ki language English hai -->
-
+<!DOCTYPE html> <!-- Ye batata hai ke document HTML5 hai -->
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <!-- Ye line ensure karti hai ke special characters (jaise Urdu ya emoji) sahi dikhain -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <!-- Isse website mobile devices par properly responsive dikhegi -->
-
-    <title>ID and Classes in HTML</title> 
-    <!-- Title tag browser tab me nazar aata hai -->
-
-    <link rel="stylesheet" href="style.css"> 
-    <!-- Ye line external CSS file ko is HTML page se connect karti hai -->
+    <meta charset="UTF-8"> <!-- UTF-8 encoding set karta hai characters ke liye -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design ke liye -->
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS file link ki gayi hai -->
 </head>
-
 <body>
-    <!-- Body tag ke andar hamara visible content hota hai -->
 
-    <!-- Yeh pehla div hai jiska id="firstdiv" diya gaya hai -->
-    <!-- ID ek unique pehchan hoti hai kisi bhi element ki. Isse CSS ya JavaScript me access kiya ja sakta hai -->
-    <!-- Saath hi is div me 3 classes bhi lagi hui hain: red, bg, yellow -->
-    <!-- Multiple classes ka matlab hai ke is element par kai CSS styles apply ho sakte hain -->
-    <div id="firstdiv" class="red bg yellow">First</div>
+    <!-- Video tag: web page pe video dikhata hai -->
+    <!-- autoplay: video turant shuru hoti hai -->
+    <!-- controls: play/pause ka option deta hai -->
+    <!-- loop: video khatam hone ke baad dobara shuru hoti hai -->
+    <!-- muted: shuru mein video ki awaz band hoti hai -->
+    <!-- poster: agar video load na ho to image dikhai jati hai -->
+    <video autoplay src="video.mp4" controls loop muted poster="download.jpg.png"></video>
 
-    <!-- Dusra div hai jisko ek ID di gayi hai "seconddiv" -->
-    <!-- Isme koi class nahi lagi, sirf ID use hui hai -->
-    <div id="seconddiv">Second</div>
+    <!-- Audio tag: sound ya music play karne ke liye -->
+    <audio src="Recording.mp3" controls autoplay loop muted></audio>
 
-    <!-- Span ek inline element hota hai -->
-    <!-- Is span me class="red" lagayi gayi hai, jisse style.css file me defined "red" class ki styling apply hogi -->
-    <!-- Ye empty span hai lekin CSS ya JavaScript ke liye useful ho sakta hai -->
-    <span class="red"></span>
+    <!-- SVG (Scalable Vector Graphics): simple shapes draw karne ke liye -->
+    <!-- yahan ek red circle draw kiya gaya hai -->
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
 
+    <!-- SVG file ko image ke tarah dikhaya gaya hai -->
+    <img src="img.svg" alt="my svg video">
+
+    <!-- iframe: doosri website ya webpage ko embed karne ke liye use hota hai -->
+    <iframe src="https://www.codewithharry.com/tutorial/html-iframes/" width="322" height="400"></iframe>
+
+    <!-- YouTube video iframe ke zariye embed ki gayi hai -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tVzUXW6siu0?si=UvK14sMs0r6CCVng&amp;start=729" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+ hello
 </body>
 </html>
